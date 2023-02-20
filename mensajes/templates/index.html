@@ -1,0 +1,47 @@
+<!-- templates/index.html -->
+
+{% extends "_base.html" %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8">
+  <h2 class="text-2xl font-bold mb-4">Usuarios Registrados</h2>
+  <div class="overflow-x-auto">
+    <table class="table-auto border-collapse w-full">
+      <thead>
+        <tr>
+          <th class="px-4 py-2 text-left">Nombre</th>
+          <th class="px-4 py-2 text-left">Correo Electrónico</th>
+          <th class="px-4 py-2 text-left">Fecha de Registro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border px-4 py-2">
+            <a href=""><img class="h-8 w-8 rounded-full object-cover" src="https://via.placeholder.com/50" alt="Perfil de John Doe"></a>
+          </td>
+          <a href=""><td class="border px-4 py-2">John ssDoe</td></a>
+          <td class="border px-4 py-2">johndoe@example.com</td>
+          <td class="border px-4 py-2">01/01/2022</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">
+            <img class="h-8 w-8 rounded-full object-cover" src="https://via.placeholder.com/50" alt="Perfil de John Doe">
+          </td>
+          <td class="border px-4 py-2">John Doe</td>
+          <td class="border px-4 py-2">johndoe@example.com</td>
+          <td class="border px-4 py-2">01/01/2022</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">
+            <img class="h-8 w-8 rounded-full object-cover" src="https://via.placeholder.com/50" alt="Perfil de John Doe">
+          </td>
+          <td class="border px-4 py-2">John Doe</td>
+          <td class="border px-4 py-2">johndoe@example.com</td>
+          <td class="border px-4 py-2">01/01/2022</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock content %}
